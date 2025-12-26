@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Engine</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; }
+        #grid { display: grid; grid-template-columns: repeat(20, 30px); gap: 1px; margin-top: 20px; }
+        .cell { width: 30px; height: 30px; background: #eee; border: 1px solid #ddd; cursor: pointer; }
+        .wall { background-color: #333; }
+        .start { background-color: #2ecc71; }
+        .end { background-color: #e74c3c; }
+        .path { background-color: #f1c40f; transition: background 0.2s; }
+        button { padding: 10px 20px; margin-top: 20px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Graph Traversal Engine</h1>
+    <p>Left Click: Wall | Shift+Click: Start | Ctrl+Click: End</p>
+    <div id="grid"></div>
+    <button onclick="findPath()">Visualize Path</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
